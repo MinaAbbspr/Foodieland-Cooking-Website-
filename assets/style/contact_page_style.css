@@ -1,0 +1,80 @@
+.contact-section { 
+    margin: 84px 80px 0 80px;
+    text-align: center; 
+}
+.contact-section h1 {
+    font-weight: 600;
+    font-size: 64px;
+    letter-spacing: -0.04em;
+    max-height: 77px;
+}
+.contact-container { 
+    display: flex; 
+    gap: 40px; 
+    margin-top: 72px; 
+    text-align: left; 
+}
+.chef-image { 
+    width: 400px; 
+    height: 472px; 
+}
+.contact-container form { 
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 24px; 
+}
+.form-row { 
+    display: flex; 
+    gap: 40px; 
+}
+.form-row div { 
+    display: flex;
+    flex-direction: column; 
+    gap: 12px;
+}
+label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: rgba(0, 0, 0, 0.6);
+}
+input, select, textarea { 
+    width: 400px;
+    height: 60px; 
+    padding: 18px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    border-radius: 16px;
+}
+textarea { 
+    height: 200px;
+    width: 840px;
+    padding: 20px;
+    resize: none;
+}
+.form-button { 
+    margin-top: 24px;
+    padding: 20px 63px; 
+    border-radius: 16px; 
+    width: 180px;
+    height: 64px; 
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+/* Newsletter */
+.newsletter-img-right{
+    position: absolute;
+    top: 1293px;
+    left: 1010px;
+    border-radius: 0 0 60px 0;
+}
+.newsletter-img-left{
+    position: absolute;
+    top: 1158px;
+    left: 80px;
+    border-radius: 0 0 0 60px;
+}

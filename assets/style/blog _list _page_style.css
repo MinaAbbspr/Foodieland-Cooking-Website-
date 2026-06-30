@@ -1,0 +1,189 @@
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+
+/* Page Header */
+.page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 300px;
+}
+.page-header h1 {
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    margin-bottom: 24px;
+}
+.search-bar {
+    display: flex;
+    width: 700px;
+    height: 80px;
+    max-width: 700px;
+    margin-top: 80px;
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 24px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.search-bar input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+}
+.search-bar button {
+    padding: 21px 57px;
+    border-radius: 16px;
+    font-weight: 600;
+}
+
+/* Blog Posts */
+.main-column {
+    margin-left: 80px;
+    min-width: 840px;
+    max-height: 1360px;
+}
+.post-card {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 32px;
+    max-width: 840px;
+    max-height: 200px;
+}
+.post-image {
+    width: 290px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.post-content h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.post-content p {
+    max-width: 500px;
+}
+.author-info {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+.author-info img {
+    width: 40px;
+    height: 40px;
+}
+.author-details {
+    display: flex;
+    align-items: center;
+}
+.author-name {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    padding-right: 24px;
+    height: 40px;
+    align-content: center;
+    border-right:  2px solid rgba(0, 0, 0, 0.1);
+}
+.post-date {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 24px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 80px;
+}
+.page-num {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+
+.page-num.active {
+    border-color: #000000;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/* Sidebar */
+.sidebar {
+    max-width: 400px;
+}
+.sidebar h3 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+.sidebar-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.mini-recipe-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.mini-recipe-card img{
+    width: 180px;
+    height: 120px;
+}
+.mini-info h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    margin-bottom: 16px;
+}
+.mini-info p {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+}
+.ads {
+    margin-top: 56px;
+    cursor: pointer;
+}
+
+/* Newsletter */
+.newsletter-img-right{
+    position: absolute;
+    top: 2426px;
+    left: 1010px;
+    border-radius: 0 0 60px 0;
+}
+.newsletter-img-left{
+    position: absolute;
+    top: 2290px;
+    left: 80px;
+    border-radius: 0 0 0 60px;
+}

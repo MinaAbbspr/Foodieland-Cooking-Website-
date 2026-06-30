@@ -1,0 +1,289 @@
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+
+/* Recipe*/
+.recipe {
+    margin: 80px 80px;
+}
+.recipe-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+.recipe-mata h1{
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-bottom: 48px;
+}
+.meta-info {
+    display: flex;
+    gap: 32px;
+}
+.meta-item {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    padding-right: 32px;
+}
+.meta-item:last-child {
+    border-right: none;
+}
+.meta-text-name{
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+}
+.meta-text-title {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+.meta-text-sub {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+}
+.recipe-actions {
+    display: flex;
+    gap: 32px;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icon-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(231, 250, 254, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.icon-img img {
+    width: 24px;
+    height: 24px;
+}
+.icon p{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+/* --- Hero Media & Nutrition --- */
+.hero-section {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+.hero-video{
+    height: 600px;
+    width: 840px;
+}
+.nutrition-card {
+    flex: 1;
+    background-color: rgba(231, 250, 254, 1);
+    border-radius: 30px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+}
+.nutrition-card h3{
+    margin-bottom: 24px;
+}
+.nutrition-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+}
+.nutrition-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 167px;
+}
+.nutrition-list li span:last-child {
+    color: #000000;
+}
+.nutrition-card span {
+    margin-top: auto;
+    text-align: center;
+}
+.nutrition-card p {
+    text-align: center;
+}
+
+/* Ingredients */
+.ingredients{
+    max-width: 840px;
+    margin: 0 40px 88px 80px;
+}
+.ingredients h2{
+    margin-bottom: 48px;
+}
+.ingredient-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 64px;
+}
+.ingredient-list li {
+    padding: 32px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+.checklist {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    cursor: pointer;
+
+    max-height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+}
+.checklist input {
+    display: none;
+}
+.checklist .checkmark {
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(219, 226, 229, 1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checklist input:checked + .checkmark {
+    border-color: #000000;
+    background-image: url(../img/recipedetails/check.png);
+    background-size: contain;
+}
+label:has(input:checked) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.6);           
+    text-decoration: line-through;
+}
+
+/* Directions */
+.directions {
+    max-width: 840px;
+    margin: 88px 40px 0px 80px;
+}
+.directions h2 {
+    margin-bottom: 32px;
+    letter-spacing: -0.02em;
+}
+.directions-ol {
+    list-style-type: none;
+}
+.directions-ol li {
+    padding: 48px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.directions-ol li:first-child{
+    padding-top: 0;
+}
+.label-h3 {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+}
+.directions div:last-child {
+    margin-bottom: 0;
+}
+.direction-img {
+    padding-left: 48px;
+    margin-bottom: 24px;
+    margin-top: 48px;
+    height: 400px;
+    width: 792px;
+}
+.step-text {
+    padding-left: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 24px;
+}
+
+/* Sidebar */
+.sidebar {
+    max-width: 400px;
+}
+.sidebar h3 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+.sidebar-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.mini-recipe-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.mini-recipe-card img{
+    width: 180px;
+    height: 120px;
+}
+.mini-info h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    margin-bottom: 16px;
+}
+.mini-info p {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+}
+.ads {
+    margin-top: 56px;
+    cursor: pointer;
+}
+
+/* Newsletter */
+.newsletter-img-right{
+    position: absolute;
+    top: 4037px;
+    left: 1012px;
+    border-radius: 0 0 60px 0;
+}
+.newsletter-img-left{
+    position: absolute;
+    top: 3900px;
+    left: 81px;
+    border-radius: 0 0 0 60px;
+}
