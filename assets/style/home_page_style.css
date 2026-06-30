@@ -82,7 +82,6 @@
 .hero-footer{
     margin: 99px 0 0 0;    
     display: inline-flex;
-    align-items: center;
     gap: 157px;
     letter-spacing: -0.02em;
     line-height: 1;
@@ -442,4 +441,180 @@
     font-weight: 600;
     font-size: 14px;
     letter-spacing: -0.02em;
+}
+
+@media (max-width: 860px) {
+    /* Hero Section */
+    .hero {
+        gap: 24px;
+        margin: 40px 0 100px 0;
+    }
+    .hero_left_side {
+        width: 24px;
+    }
+    .hero-content {
+        width: 367px;
+        max-width: 367px;
+        padding: 30px 30px;
+    }
+    .hero-content h1 {
+        height: 90px;
+        font-size: 38px;
+    }
+    .hero-footer{ 
+        flex-direction: column;  
+        gap: 40px;
+    }
+    .hero-img{
+        width: 367px;
+        max-width: 367;
+    }
+    .badge-overlay {
+        left: 350px;
+    }
+    .hero_right_side {
+        width: 24px;
+        height: 600px;
+    }
+
+    /* Categories */
+    .categories {
+        margin: 100px 48px;
+    }
+    .category-grid {
+        gap: 24px;
+    }
+    .cat-card {
+        width: 110px;
+        gap: 30px;
+        margin-top: 0;
+    }
+    .cat-img{
+        top: 1000px;
+        width: 80px;
+        height: 80px;
+    }
+    .cat-img-shadow{
+        width: 80px;
+        height: 80px;
+        top: 1020px;
+    }
+
+    /* Recipes Grid */
+    .recipes-section {
+        margin: 110px 48px 85px 48px;
+    }
+    .recipe-txt{
+        width: 367px;
+        max-width: 367px;
+        height: 24px;
+        margin-bottom: 42px;
+        margin-top: 14px;
+    }
+    .recipe-grid {
+        gap: 20px;
+    }
+    .recipe-grid > img {
+        width: 238px;
+        height: 300px;
+    }
+    .recipe-card {
+        padding: 9px;
+        width: 236px;
+        height: 300px;
+        max-width: 236px;
+        max-height: 300px;
+    }
+    .card-img {
+        width: 218px;
+        height: auto;
+    }
+    .recipe-card h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .card-burger{
+        top: 1445px;
+        left: 220px;
+    }
+    .card-healthy{
+        top: 1765px;
+        left: 220px;
+    }
+    .card-sweet{
+        top: 2085px;
+        left: 220px;
+    }
+    .card-fish{
+        top: 1445px;
+        left: 470px;
+    }
+    .card-breakfast{
+        top: 1445px;
+        left: 730px;
+    }
+    .card-meat{
+        top: 1765px;
+        left: 470px;
+    }
+    .card-snack{
+        top: 2085px;
+        left: 470px;
+    }
+    .card-noodles{
+        top: 2085px;
+        left: 730px;
+    }
+
+    /* Promo Section */
+    .promo-section {
+        margin: 85px 48px 0px 48px;
+        gap: 25px;
+    }
+    .promo-content {
+        width: 311px;
+    }
+    .promo-content h2 {
+        height: 70px;
+        width: 311px;
+        font-size: 28px;
+        margin-top: 169px;
+        margin-bottom: 14px;
+    }
+    .promo-content p {
+        width: 300px;
+        height: 50px;
+        margin-bottom: 42px;
+    }
+    .promo-image img {
+        width: 420px;
+        height: auto;
+        position: relative;
+        top: 100px;
+    }
+
+    /* Instagram */
+    .instagram-section {
+        width: 100%;
+        height: 600px;
+        padding: 48px 48px;
+        margin: 0;
+    }
+    .ig-header {
+        margin-bottom: 48px;
+        width: 600px;
+        height: 100px;
+    }
+    .ig-header h2 {
+        font-size: 28px;
+    }
+    .ig-flex {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 48px;
+    }
+    .ig-flex img {
+        width: 170px;
+        height: auto;
+    }
 }
