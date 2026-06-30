@@ -273,17 +273,3 @@ label:has(input:checked) {
     margin-top: 56px;
     cursor: pointer;
 }
-
-/* Newsletter */
-.newsletter-img-right{
-    position: absolute;
-    top: 4037px;
-    left: 1012px;
-    border-radius: 0 0 60px 0;
-}
-.newsletter-img-left{
-    position: absolute;
-    top: 3900px;
-    left: 81px;
-    border-radius: 0 0 0 60px;
-}

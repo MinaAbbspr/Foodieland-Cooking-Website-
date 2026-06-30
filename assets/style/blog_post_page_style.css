@@ -122,18 +122,6 @@ blockquote {
 .newsletter {
     margin-top: 132px;
 }
-.newsletter-img-right{
-    position: absolute;
-    top: 3410px;
-    left: 1010px;
-    border-radius: 0 0 60px 0;
-}
-.newsletter-img-left{
-    position: absolute;
-    top: 3275px;
-    left: 80px;
-    border-radius: 0 0 0 60px;
-}
 
 /* Suggestion */
 .sug-grid-wrapper {

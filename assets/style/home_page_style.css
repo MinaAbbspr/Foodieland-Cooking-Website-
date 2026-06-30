@@ -443,17 +443,3 @@
     font-size: 14px;
     letter-spacing: -0.02em;
 }
-
-/* Newsletter */
-.newsletter-img-right{
-    position: absolute;
-    top: 6363px;
-    left: 1012px;
-    border-radius: 0 0 60px 0;
-}
-.newsletter-img-left{
-    position: absolute;
-    top: 6226px;
-    left: 80px;
-    border-radius: 0 0 0 60px;
-}

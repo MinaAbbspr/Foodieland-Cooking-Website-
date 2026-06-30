@@ -124,6 +124,10 @@ article{
 
 /* Newsletter */
 .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 442px;
     background-color: rgba(231, 249, 253, 1);
     margin: 160px 80px;
     padding: 80px 330px;
@@ -167,6 +171,18 @@ article{
     font-weight: 600;
     padding: 21px 47px;
     border-radius: 16px;
+}
+.newsletter-img-right{
+    position: relative;
+    top: -160px;
+    left: 465px;
+    border-radius: 0 0 60px 0;
+}
+.newsletter-img-left{
+    position: relative;
+    top: -540px;
+    left: -450px;
+    border-radius: 0 0 0 60px;
 }
 
 /* Suggestion */
@@ -252,4 +268,109 @@ article{
 }
 .footer-bottom p{
     margin-left: 472px;
+}
+
+@media (max-width: 860px) {
+    body {
+        width: 100%;
+    }
+    .txt {
+        font-size: 9px;
+        line-height: 16px;
+    }
+    .container {
+        gap: 24px;
+    }
+
+    /* Header */
+    .header {
+        width: 100%;
+        padding: 40px 48px;
+    }
+    .nav a {
+        margin: 0 18px;
+    }
+    .social-icons {
+        display: flex;
+        gap: 24px;
+    }
+    .section-header h2 {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: -0
+        }
+
+    /* Newsletter */
+    .newsletter {
+        margin: 95px 48px;
+        padding: 80px 100px;
+        max-height: 392px;
+    }
+    .newsletter h2 {
+        width: 349px;
+        font-size: 28px;
+    }
+    .newsletter p {
+        width: 367px;
+        margin-bottom: 38px;
+    }
+    .newsletter-form button {
+        font-weight: 600;
+        padding: 21px 47px;
+        border-radius: 16px;
+    }
+    .newsletter-img-right{
+        width: 200px;
+        height: auto;
+        top: -31px;
+        left: 271px;
+        border-radius: 0 0 60px 0;
+    }
+    .newsletter-img-left{
+        width: 200px;
+        height: auto;
+        top: -233px;
+        left: -272px;
+        border-radius: 0 0 0 60px;
+    }
+
+    /* Suggestion */
+    .suggestion-section {
+        margin: 95px 48px
+    }
+    .sug-headeer p{
+        width: 367px;
+        max-width: 367px;
+        height: 56px;
+        align-content: center;
+    }
+    .sug-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+    .sug-img {
+        width: 170px;
+        height: auto;
+    }
+    .sug-card h3{
+        font-size: 11px;
+    }
+    .card-meta{
+        gap: 12px;
+    }
+    .card-tag{
+        font-size: 10px;
+    }
+    .sug-card-img{
+        width: 28px;
+        height: auto;
+        top: -230px;
+        left: 130px;
+    }
+
+    /* Footer */
+    .footer {
+        margin: 95px 48px 48px 48px;
+    }
 }

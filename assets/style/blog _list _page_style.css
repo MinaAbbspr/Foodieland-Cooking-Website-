@@ -173,17 +173,3 @@ h3 {
     margin-top: 56px;
     cursor: pointer;
 }
-
-/* Newsletter */
-.newsletter-img-right{
-    position: absolute;
-    top: 2426px;
-    left: 1010px;
-    border-radius: 0 0 60px 0;
-}
-.newsletter-img-left{
-    position: absolute;
-    top: 2290px;
-    left: 80px;
-    border-radius: 0 0 0 60px;
-}

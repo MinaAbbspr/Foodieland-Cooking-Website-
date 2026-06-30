@@ -64,17 +64,3 @@ textarea {
     line-height: 24px;
     letter-spacing: -0.02em;
 }
-
-/* Newsletter */
-.newsletter-img-right{
-    position: absolute;
-    top: 1293px;
-    left: 1010px;
-    border-radius: 0 0 60px 0;
-}
-.newsletter-img-left{
-    position: absolute;
-    top: 1158px;
-    left: 80px;
-    border-radius: 0 0 0 60px;
-}
