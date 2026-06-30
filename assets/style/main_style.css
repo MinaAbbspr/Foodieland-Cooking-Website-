@@ -425,4 +425,32 @@ article{
     .footer {
         margin: 95px 48px 48px 48px;
     }
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .footer-logo {
+        align-items: center;
+        gap: 14px;
+    }
+    .footer-nav {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .footer-nav a {
+        margin: 0;
+    }
+    .footer-bottom {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .footer-bottom p{
+        margin-left: 0;
+    }
+    .footer-bottom .social-icons {
+        display: flex;
+        gap: 40px;
+    }
 }
