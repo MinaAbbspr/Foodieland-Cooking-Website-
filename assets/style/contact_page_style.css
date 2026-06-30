@@ -64,3 +64,44 @@ textarea {
     line-height: 24px;
     letter-spacing: -0.02em;
 }
+
+@media (max-width: 860px) {
+    .contact-section { 
+        margin: 50px 48px 0 48px;
+    }
+    .contact-section h1 {
+        font-size: 38px;
+        max-height: 45px;
+    }
+    .contact-container { 
+        gap: 24px; 
+        margin-top: 42px; 
+    }
+    .chef-image { 
+        width: 237px; 
+        height: 280px; 
+    }
+    .contact-container form { 
+        gap: 14px; 
+    }
+    .form-row {  
+        gap: 24px; 
+    }
+    .form-row div { 
+        gap: 7px;
+    }
+    label {
+        font-size: 7px;
+        line-height: 12px;
+    }
+    input, select, textarea { 
+        width: 237px;
+        height: 35px; 
+        padding: 10px 12px;
+        border-radius: 10px;
+    }
+    textarea { 
+        height: 118px;
+        width: 498px;
+    }
+}
