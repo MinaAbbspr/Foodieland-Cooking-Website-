@@ -173,3 +173,114 @@ h3 {
     margin-top: 56px;
     cursor: pointer;
 }
+
+@media (max-width: 860px) {
+    h2 {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: -0.04em;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: -0.04em;
+    }
+
+    /* Page Header */
+    .page-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 80px 70px;
+    }
+    .page-header h1 {
+        font-size: 38px;
+    }
+    .search-bar {
+        margin-top: 20px;
+    }
+
+    /* Blog Posts */
+    .main-column {
+        margin-left: 48px;
+        min-width: 500px;
+        max-height: 1360px;
+    }
+    .post-card {
+        gap: 24px;
+        margin-bottom: 18px;
+        max-width: 500px;
+        max-height: 117px;
+    }
+    .post-image {
+        width: 170px;
+        height: 117px;
+    }
+    .post-content h2 {
+        font-size: 14px;
+        margin-bottom: 9px;
+    }
+    .post-content p {
+        max-width: 295px;
+    }
+    .author-info {
+        gap: 10px;
+        margin-top: 18px;
+    }
+    .author-info img {
+        width: 30px;
+        height: 30px;
+    }
+    .author-name {
+        font-size: 12px;
+    }
+    .post-date {
+        font-size: 8px;
+    }
+
+    /* Pagination */
+    .pagination {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 48px;
+    }
+    .page-num {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        max-width: 230px;
+    }
+    .sidebar h3 {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+    .sidebar-title {
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+    .mini-recipe-card {
+        gap: 12px;
+    }
+    .mini-recipe-card img{
+        width: 100px;
+        height: 66px;
+    }
+    .mini-info h4 {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .mini-info p {
+        font-size: 8px;
+    }
+    .ads {
+        margin-top: 56px;
+        width: 230px;
+    }
+
+}
