@@ -155,3 +155,100 @@ blockquote {
 .carousel-btn:hover {
     background-color: #ff0000;
 }
+
+@media (max-width: 860px) {
+    /* Hero */
+    .hero {
+        margin-top: 48px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    .hero p {
+        max-width: 627px;
+        margin-bottom: 43px;
+    }
+    .author-info {
+        gap: 10px;
+        margin-bottom: 16px;
+    }
+    .author-info img {
+        width: 30px;
+        height: 30px;
+    }
+    .hero > img {
+        width: 758px;
+        height: auto;
+    }
+
+    /* Explain */
+    .container {
+        margin-left: 80px;
+        margin-top: 42px;
+        gap: 29px;
+    }
+    .explain {
+        max-width: 544px;
+    }
+    .explain h2 {
+        padding-left: 24px;
+        margin-bottom: 18px;
+    }
+    .explain p {
+        max-width: 497px;
+        padding-left: 24px;
+    }
+    .p1 {
+        margin-bottom: 66px;
+    }
+    .p2 {
+        margin-bottom: 50px;
+    }
+    .explain img {
+        width: 497px;
+        height: auto;
+        padding-left: 24px;
+        margin-bottom: 20px;
+        margin-top: 4px;
+    }
+    .p3 {
+        margin-bottom: 33px;
+    }
+    .p4 {
+        margin-bottom: 38px;
+    }
+    blockquote { 
+        padding-left: 20px; 
+        padding-top: 28px;
+        margin-bottom: 38px; 
+        width: 544px;
+        height: 133px;
+        font-size: 21px;
+        line-height: 38px; 
+    }
+
+    /* Sidebar */
+    .sidebar {
+        gap: 20px;
+    }
+    .sidebar h3 {
+        font-size: 10px;
+    }
+    .sidebar div{
+        gap: 28px;
+    }
+
+
+    /* Newsletter */
+    .newsletter {
+        margin-top: 0;
+    }
+
+    /* Suggestion */
+    .carousel-controls {
+        margin-top: 0px;
+    }
+    .carousel-btn {
+        display: none;
+    }
+}
