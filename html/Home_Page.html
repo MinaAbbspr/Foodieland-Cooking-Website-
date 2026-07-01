@@ -78,37 +78,14 @@
                 <h2>Categories</h2>
                 <button type="button" class="btn-view-cat btn-light">View All Categories</button>
             </div>
-            <div class="category-grid">
-                <a class="cat-card card breakfast" href="#">
-                    <img  src="../assets/img/homepage/image 25.png" alt="Breakfast-Shadow" class="cat-img-shadow">
-                    <img  src="../assets/img/homepage/image 25.png" alt="Breakfast" class="cat-img">
-                    <p>Breakfast</p>
-                </a>
-                <a class="cat-card card vegan" href="#">
-                    <img  src="../assets/img/homepage/Group 879.png" alt="Vegan" class="cat-img-shadow">
-                    <img  src="../assets/img/homepage/Group 879.png" alt="Vegan" class="cat-img">
-                    <p>Vegan</p>
-                </a>
-                <a class="cat-card card meat" href="#">
-                    <img  src="../assets/img/homepage/image 21.png" alt="Meat" class="cat-img-shadow">
-                    <img  src="../assets/img/homepage/image 21.png" alt="Meat" class="cat-img">
-                    <p>Meat</p>
-                </a>
-                <a class="cat-card card dessert" href="#">
-                    <img  src="../assets/img/homepage/image 22.png" alt="Dessert" class="cat-img-shadow">
-                    <img  src="../assets/img/homepage/image 22.png" alt="Dessert" class="cat-img">
-                    <p>Dessert</p>
-                </a>
-                <a class="cat-card card lunch" href="#">
-                    <img  src="../assets/img/homepage/image 23.png" alt="Lunch" class="cat-img-shadow">
-                    <img  src="../assets/img/homepage/image 23.png" alt="Lunch" class="cat-img">
-                    <p>Lunch</p>
-                </a>
-                <a class="cat-card card chocolate" href="#">
-                    <img  src="../assets/img/homepage/image 24.png" alt="Chocolate" class="cat-img-shadow">
-                    <img  src="../assets/img/homepage/image 24.png" alt="Chocolate" class="cat-img">
-                    <p>Chocolate</p>
-                </a>
+            <div class="loading-container">
+                <div class="spinner"></div>
+                <p class="txt">
+                    Loading delicious categories...
+                </p>
+            </div>
+            <div class="category-grid" id="categoriesGrid">
+
             </div>
         </section>
 
@@ -406,7 +383,7 @@
         <section class="newsletter">   
             <h2>Deliciousness to your inbox</h2>
             <p class="txt">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
-            <form class="newsletter-form">
+            <form  class="newsletter-form" id="newsletterForm">
                 <input id="email" type="email" placeholder="Your email address...">
                 <button type="submit" class="btn-dark">Subscribe</button>
             </form>

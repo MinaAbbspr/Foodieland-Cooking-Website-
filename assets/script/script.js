@@ -42,3 +42,44 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const newsletterForm = document.getElementById('newsletterForm');
+    newsletterForm.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        const emailInput = document.getElementById('email');
+        if (!emailInput.value) return;
+        const emailValue = emailInput.value;
+
+        const submitButton = newsletterForm.querySelector('button');
+        const originalButtonText = submitButton.innerText;
+        submitButton.innerText = "Connecting to server...";
+        submitButton.disabled = true;
+
+        try {
+            const response = await fetch('https://foodieland-oq9b.onrender.com/api/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({email: emailValue })
+            });
+
+            if (response.ok) {
+                alert('Your email has been registered successfully.');
+                newsletterForm.reset();
+            } else {
+                const errorText = await response.text();
+                alert(`Server responded with error ${response.status}. Please try again.`);
+            }
+
+        } catch (error) {
+            alert('Could not connect to the server. Please check your internet connection.');
+        } finally {
+            submitButton.innerText = originalButtonText;
+            submitButton.disabled = false;
+        }
+    });
+});
