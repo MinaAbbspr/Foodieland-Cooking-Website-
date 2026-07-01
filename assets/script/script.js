@@ -48,9 +48,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const newsletterForm = document.getElementById('newsletterForm');
     newsletterForm.addEventListener('submit', async function (event) {
         event.preventDefault();
-        const emailInput = document.getElementById('email');
-        if (!emailInput.value) return;
-        const emailValue = emailInput.value;
+        const emailValue = document.getElementById('email').value;
+        if (!emailValue){
+            alert('Enter your email first.');
+            return;
+        }
 
         const submitButton = newsletterForm.querySelector('button');
         const originalButtonText = submitButton.innerText;
