@@ -31,70 +31,74 @@
     <main>
         <!-- Recipe-->
         <section class="recipe">
-            <div class="recipe-header">
-                <div class="recipe-mata">
-                    <h1>Health Japanese Fried Rice</h1>
-                    <div class="meta-info">
-                        <div class="meta-item">
-                            <img src="../assets/img/recipedetails/Ellipse 2.svg" alt="John Smith">
-                            <div>
-                                <p class="meta-text-name">John Smith</p>
-                                <p class="meta-text-sub">15 March 2022</p>
-                            </div>
-                        </div>
-                        <div class="meta-item">
-                            <img src="../assets/img/recipedetails/Timer.svg" alt="Timer">
-                            <div>
-                                <p class="meta-text-title">PREP TIME</p>
-                                <p class="meta-text-sub">15 Minutes</p>
-                            </div>
-                        </div>
-                        <div class="meta-item">
-                            <img src="../assets/img/recipedetails/Timer.svg" alt="Timer">
-                            <div>
-                                <p class="meta-text-title">COOK TIME</p>
-                                <p class="meta-text-sub">15 Minutes</p>
-                            </div>
-                        </div>
-                        <div class="meta-item">
-                            <img src="../assets/img/recipedetails/ForkKnife.svg" alt="ForkKnife">
-                            <p class="meta-text-sub">Chicken</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="recipe-actions">
-                    <div class="icon">
-                        <a href="#" class="icon-img">
-                            <img src="../assets/img/recipedetails/printer.svg" alt="printer">
-                        </a>
-                        <p>PRINT</p>
-                    </div>
-                    <div class="icon">
-                        <a href="#" class="icon-img">
-                            <img src="../assets/img/recipedetails/share.svg" alt="share">
-                        </a>
-                        <p>SHARE</p>
-                    </div>
-                </div>
+            <div class="loading-container" id="recipeLoading">
+                <div class="spinner"></div>
+                <p class="txt">Preparing the delicious recipe details...</p>
             </div>
-            <div class="hero-section">
-                <img src="../assets/img/recipedetails/Group 13937.png" alt="Video" class="hero-video">
-                <div class="nutrition-card">
-                    <h3>Nutrition Information</h3>
-                    <ul class="nutrition-list">
-                        <li><span>Calories</span> <span>219.9 kcal</span></li>
-                        <li><span>Total Fat</span> <span>10.7 g</span></li>
-                        <li><span>Protein</span> <span>7.9 g</span></li>
-                        <li><span>Carbohydrate</span> <span>22.3 g</span></li>
-                        <li><span>Cholesterol</span> <span>37.4 mg</span></li>
-                    </ul>
-                    <p class="txt">adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div id="recipeContentWrapper">
+                <div class="recipe-header">
+                    <div class="recipe-mata">
+                        <h1 id="recipeTitle">No Title</h1>
+                        <div class="meta-info">
+                            <div class="meta-item">
+                                <img id="authorImage" src="../assets/img/recipedetails/user-default.png" alt="John Smith">
+                                <div>
+                                    <p id="authorName" class="meta-text-name">Anonymous</p>
+                                    <p id="postDate" class="meta-text-sub"></p>
+                                </div>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../assets/img/recipedetails/Timer.svg" alt="Timer">
+                                <div>
+                                    <p class="meta-text-title">PREP TIME</p>
+                                    <p id="prepTimeValue" class="meta-text-sub">--</p>
+                                </div>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../assets/img/recipedetails/Timer.svg" alt="Timer">
+                                <div>
+                                    <p class="meta-text-title">COOK TIME</p>
+                                    <p id="cookTimeValue" class="meta-text-sub">--</p>
+                                </div>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../assets/img/recipedetails/ForkKnife.svg" alt="ForkKnife">
+                                <p id="categoryValue" class="meta-text-sub">General</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recipe-actions">
+                        <div class="icon">
+                            <a href="#" class="icon-img">
+                                <img src="../assets/img/recipedetails/printer.svg" alt="printer">
+                            </a>
+                            <p>PRINT</p>
+                        </div>
+                        <div class="icon">
+                            <a href="#" class="icon-img">
+                                <img src="../assets/img/recipedetails/share.svg" alt="share">
+                            </a>
+                            <p>SHARE</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="hero-section">
+                    <img id="mainRecipeImage" src="#" alt="Video" class="hero-video">
+                    <div class="nutrition-card">
+                        <h3>Nutrition Information</h3>
+                        <ul class="nutrition-list">
+                            <li><span>Calories</span> <span id="caloriesValue">0 kcal</span></li>
+                            <li><span>Total Fat</span> <span id="fatValue">0 g</span></li>
+                            <li><span>Protein</span> <span id="proteinValue">0 g</span></li>
+                            <li><span>Carbohydrate</span> <span id="carbsValue">0 g</span></li>
+                            <li><span>Cholesterol</span> <span id="cholesterolValue">0 mg</span></li>
+                        </ul>
+                        <p class="txt" id="recipeDescription">adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
 
-            <p class="txt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+                <p class="txt" id="mainFooterDescription"></p>
+            </div>
         </section>
 
         <div class="container">
@@ -335,4 +339,5 @@
         </div>
     </footer>
     <script src="../assets/script/script.js"></script>
+    <script src="../assets/script/recipe_script.js"></script>
 </body>
