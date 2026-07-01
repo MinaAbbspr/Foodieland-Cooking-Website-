@@ -160,6 +160,7 @@ blockquote {
     /* Hero */
     .hero {
         margin-top: 48px;
+        margin-bottom: 48px;
     }
     h1 {
         font-size: 38px;
@@ -177,25 +178,26 @@ blockquote {
         height: 30px;
     }
     .hero > img {
-        width: 758px;
+        width: 100%;
         height: auto;
     }
 
     /* Explain */
     .container {
-        margin-left: 80px;
-        margin-top: 42px;
-        gap: 29px;
+        margin: auto;
+        flex-direction: column;
+        width: 92%;
     }
     .explain {
-        max-width: 544px;
+        width: 100%;
+        max-width: 100%;
     }
     .explain h2 {
         padding-left: 24px;
         margin-bottom: 18px;
     }
     .explain p {
-        max-width: 497px;
+        max-width: none;
         padding-left: 24px;
     }
     .p1 {
@@ -205,9 +207,9 @@ blockquote {
         margin-bottom: 50px;
     }
     .explain img {
-        width: 497px;
+        width: 100%;
         height: auto;
-        padding-left: 24px;
+        padding-left: 0;
         margin-bottom: 20px;
         margin-top: 4px;
     }
@@ -218,33 +220,52 @@ blockquote {
         margin-bottom: 38px;
     }
     blockquote { 
-        padding-left: 20px; 
-        padding-top: 28px;
+        padding: 20px;
         margin-bottom: 38px; 
-        width: 544px;
-        height: 133px;
+        width: 100%;
+        height: auto;
         font-size: 21px;
         line-height: 38px; 
     }
 
     /* Sidebar */
     .sidebar {
+        flex-direction: row;
         gap: 20px;
     }
     .sidebar h3 {
         font-size: 10px;
     }
     .sidebar div{
+        flex-direction: row;
         gap: 28px;
     }
 
-
-    /* Newsletter */
-    .newsletter {
-        margin-top: 0;
-    }
-
     /* Suggestion */
+    .sug-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .sug-card h3{
+        font-size: 20px;
+    }
+    .card-meta{
+        gap: 20px;
+    }
+    .card-tag{
+        font-size: 16px;
+    }
+    .sug-img {
+        width: 100%;
+        height: auto;
+    }
+    .sug-card-img{
+        width: 80px;
+        top: -550px;
+        left: 400px;
+        margin-bottom: -60px;
+    }
     .carousel-controls {
         margin-top: 0px;
     }

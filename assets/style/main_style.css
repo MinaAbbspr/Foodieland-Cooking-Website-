@@ -397,9 +397,7 @@ article{
         align-content: center;
     }
     .sug-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 12px;
+        gap: 20px;
     }
     .sug-img {
         width: 170px;
